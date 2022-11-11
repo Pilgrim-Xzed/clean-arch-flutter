@@ -1,4 +1,5 @@
-import 'package:diotest/domain/repository/application.dart';
+
+import 'package:diotest/domain/repository/repository.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
