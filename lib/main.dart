@@ -1,9 +1,13 @@
-import 'package:diotest/dio_net_test.dart';
-import 'package:diotest/injector.dart';
-import 'package:flutter/material.dart';
 
-void main() {
+import 'package:diotest/injector.dart';
+import 'package:diotest/presentation/welcome/welcome.dart';
+import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();  
+  await initialize();
   runApp(const MyApp());
 }
 
@@ -12,8 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: DioNetTest(),
+    return  const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Welcome(),
     );
   }
 }

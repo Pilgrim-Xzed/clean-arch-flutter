@@ -2,8 +2,7 @@ import 'package:injectable/injectable.dart';
 import 'package:logger/logger.dart';
 
 @module
-abstract class LoggerModule{
+abstract class LoggerModule {
   @lazySingleton
   Logger get logger => Logger();
-
 }

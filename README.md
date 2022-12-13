@@ -1,16 +1,15 @@
-# diotest
+# Clean Architecture + Flutter 
 
-A new Flutter project.
+Clean architecture is a reference architectural pattern. This pattern separates an application in layers but, unlike others like MVC, separates all the layers of the problem not only the ones related to the view and controller. So, it is agnostic of the architecture and programming language. If you want to scale your code, use clean architecture!
 
-## Getting Started
+## Packages
+Below is a list of packages that where used.
+- [GetIt - Service Locatior ](https://docs.flutter.dev/get-started/codelab)
+- [Injectable: Code generator for GetIt](https://docs.flutter.dev/cookbook)
+- [Logger: Beautifull logs](https://docs.flutter.dev/cookbook)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Generating core files 
+This framework makes it easy to generate core files with BLoC Included 
+```
+$ ./generator.sh screen login #(This command will auto generate files for the login screen)
+```
